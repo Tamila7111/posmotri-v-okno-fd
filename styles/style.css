@@ -56,7 +56,6 @@ ol {
 .content {
   margin: auto;
   width: 1140px;
-  height: 534px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -66,8 +65,8 @@ ol {
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
+  inline-size: 711px;
+  block-size: 386px;
   margin-bottom: 16px;
   overflow: hidden;
   position: relative;
@@ -95,9 +94,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
-  font-weight: 400;
-  font-style: Regular;
+  font-family: inherit;
   font-size: 18px;
 }
 .search-form__label {
@@ -117,15 +114,15 @@ ol {
 }
 
 .search-form__textfield {
+  min-inline-size: 225px;
+  min-block-size: 27px;
   appearance: none;
   background-color: #1b1919;
   color: rgb(255, 255, 255, 0.7);
   border-width: 1px 0px 1px 0px;
   border-style: solid;
   border-color: #ffffff;
-  font-family: Fira Sans Condensed;
-  font-weight: 400;
-  font-style: Regular;
+  font-family: inherit;
   font-size: 18px;
   outline: none;
   width: 100%;
@@ -147,8 +144,8 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  width: 19px;
-  height: 19px;
+  inline-size: 19px;
+  block-size: 19px;
   border: 1px solid #ffffff;
   padding: 1px;
   position: relative;
@@ -185,9 +182,8 @@ ol {
 .button {
   border: 1px solid #ffffff;
   background-color: inherit;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-weight: 700;
-  font-style: none;
   font-size: 18px;
   text-align: center;
   color: #ffffff;
@@ -195,14 +191,14 @@ ol {
 
 .search-form__submit-button {
   flex-grow: 0;
-  width: 194px;
-  height: 34px;
+  inline-size: 194px;
+  block-size: 34px;
   align-self: flex-end;
 }
 
 .content__details {
   flex-grow: 1;
-  height: 100%;
+  block-size: 100%;
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -210,7 +206,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald; sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 75px;
@@ -225,7 +221,7 @@ ol {
 }
 
 .content__list-container {
-  height: 298px;
+  block-size: 298px;
   overflow-y: auto;
   position: relative;
   display: flex;
@@ -282,9 +278,8 @@ ol {
 
 .content__video-card-title {
   margin-bottom: 6px;
-  font-family: Oswald;
+  font-family: Oswald; sans-serif;
   font-weight: 700;
-  font-style: none;
   font-size: 30px;
   line-height: 1;
   letter-spacing: 0;
@@ -294,9 +289,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
-  font-weight: 400;
-  font-style: Regular;
+  font-family: inherit;
   font-size: 18px;
   line-height: 16.2px;
   letter-spacing: 0;
@@ -304,13 +297,14 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  height: 103px;
+  block-size: 103px;
   min-width: 194px;
   object-fit: cover;
   object-position: center;
 }
 
 .more-button {
+  min-block-size: 34px;
   width: 100%;
 }
 
